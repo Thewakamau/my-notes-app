@@ -1,0 +1,77 @@
+body {
+	background-color: #1b4915; /* light gray color */
+}
+.main {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 0px 15px;
+	min-height: 100vh;
+}
+.notes {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+@media screen and (max-width: 900px) {
+	.notes {
+		flex-direction: column;
+	}
+}
+.header {
+	display: flex;
+	justify-content: center;
+	font-weight: bold;
+}
+.note {
+	max-width: 300px;
+	max-height: 210px;
+	min-width: 300px;
+	max-height: 210px;
+	padding: 10px;
+	border: 1px solid rgb(0, 255, 0);
+	outline: none;
+	font-size: 16px;
+	line-height: 1.5;
+	font-family: "Segoe UI", sans-serif;
+
+	resize: none;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+.note btn {
+	float: left;
+	position: absolute;
+}
+.btn {
+	color: #00c853; /* pastel green color */
+	transition: 0.1s ease-in-out;
+	border: 1.5px solid #fff;
+	border-radius: 10px;
+
+	padding: 4px 10px;
+	font-size: 13px;
+	cursor: pointer;
+	margin-left: 0;
+}
+.note textarea {
+	width: 250px;
+	height: 140px;
+	padding: 10px;
+	font-size: 16px;
+	line-height: 1.5;
+	font-family: "Segoe UI", sans-serif;
+
+	resize: none;
+
+	outline: none;
+}
+textarea {
+	border: none;
+	background-color: #1b4915;
+}
+.note note-delete {
+	position: absolute;
+
+	left: 0;
+}
